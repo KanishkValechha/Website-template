@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shivanand</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./img/Shivanand_Logo-no-background.png" alt="" />
+      <ul>
+        <li><a href="#landing">Home</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">About us</a></li>
+      </ul>
+    </nav>
+    <section id="landing" class="container">
+      <div class="wrapper">
+        <div class="slider">
+          <img
+            draggable="false"
+            (dragstart)="false;"
+            class="unselectable"
+            id="s1"
+            src="./img/home_1.jpg"
+            alt=""
+          />
+          <img
+            draggable="false"
+            (dragstart)="false;"
+            class="unselectable"
+            id="s2"
+            src="./img/home_3.jpg"
+            alt=""
+          />
+          <img
+            draggable="false"
+            (dragstart)="false;"
+            class="unselectable"
+            id="s3"
+            src="./img/home_10.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <a href="#s1"></a>
+          <a href="#s2"></a>
+          <a href="#s3"></a>
+        </div>
+      </div>
+    </section>
+    <article>
+      <div class="descrip">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat saepe
+        suscipit ex. Quam porro reprehenderit consequatur, odio nostrum
+        laudantium assumenda cupiditate, voluptatibus architecto, incidunt eum?
+        Doloribus laborum asperiores atque odio! Quae fuga, incidunt quaerat
+        quisquam facere labore, fugit tempore voluptatibus ducimus explicabo
+        natus, dolorem modi! Unde, omnis culpa! Id iusto mollitia delectus quos
+        consequatur distinctio quasi sunt illum facilis nisi.
+      </div>
+      <div class="images">
+        <img class="amenities" src="./img/grocery.jpg" alt="" />
+        <img class="amenities" src="./img/grocery.jpg" alt="" />
+        <img class="amenities" src="./img/grocery.jpg" alt="" />
+        <img class="amenities" src="./img/dentist.jpg" alt="" />
+      </div>
+    </article>
+    <article>
+      <div class="images">
+        <img class="amenities" src="./img/grocery.jpg" alt="" />
+        <img class="amenities" src="./img/grocery.jpg" alt="" />
+        <img class="amenities" src="./img/grocery.jpg" alt="" />
+        <img class="amenities" src="./img/dentist.jpg" alt="" />
+      </div>
+      <div class="descrip">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat saepe
+        suscipit ex. Quam porro reprehenderit consequatur, odio nostrum
+        laudantium assumenda cupiditate, voluptatibus architecto, incidunt eum?
+        Doloribus laborum asperiores atque odio! Quae fuga, incidunt quaerat
+        quisquam facere labore, fugit tempore voluptatibus ducimus explicabo
+        natus, dolorem modi! Unde, omnis culpa! Id iusto mollitia delectus quos
+        consequatur distinctio quasi sunt illum facilis nisi.
+      </div>
+    </article>
+    <script>
+      // Select all anchor tags within the .slide div
+      const slideAnchors = document.querySelectorAll(".slide a");
+
+      // Add an event listener to each anchor
+      slideAnchors.forEach((anchor) => {
+        anchor.addEventListener("click", function (event) {
+          // Prevent the default anchor action
+          event.preventDefault();
+
+          // Get the href attribute of the clicked anchor
+          const targetId = this.getAttribute("href");
+
+          // Use the targetId to select the corresponding image
+          const targetImage = document.querySelector(targetId);
+
+          // Scroll the .slider container to the target image
+          const slider = document.querySelector(".slider");
+          slider.scrollLeft = targetImage.offsetLeft;
+        });
+      });
+    </script>
+  </body>
+</html>
