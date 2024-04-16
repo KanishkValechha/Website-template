@@ -4,16 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Shivanand</title>
   </head>
   <body>
     <nav>
-      <img src="./img/Shivanand_Logo-no-background.png" alt="" />
+      <img
+        draggable="false"
+        (dragstart)="false;"
+        class="unselectable"
+        src="./img/Shivanand_Logo-no-background.png"
+        alt=""
+      />
       <ul>
         <li><a href="#landing">Home</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact Us</a></li>
-        <li><a href="">About us</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+        <li><a href="#about-us">About us</a></li>
       </ul>
     </nav>
     <section id="landing" class="container">
@@ -51,40 +70,156 @@
         </div>
       </div>
     </section>
-    <article>
-      <div class="descrip">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat saepe
-        suscipit ex. Quam porro reprehenderit consequatur, odio nostrum
-        laudantium assumenda cupiditate, voluptatibus architecto, incidunt eum?
-        Doloribus laborum asperiores atque odio! Quae fuga, incidunt quaerat
-        quisquam facere labore, fugit tempore voluptatibus ducimus explicabo
-        natus, dolorem modi! Unde, omnis culpa! Id iusto mollitia delectus quos
-        consequatur distinctio quasi sunt illum facilis nisi.
-      </div>
-      <div class="images">
-        <img class="amenities" src="./img/grocery.jpg" alt="" />
-        <img class="amenities" src="./img/grocery.jpg" alt="" />
-        <img class="amenities" src="./img/grocery.jpg" alt="" />
-        <img class="amenities" src="./img/dentist.jpg" alt="" />
-      </div>
-    </article>
-    <article>
-      <div class="images">
-        <img class="amenities" src="./img/grocery.jpg" alt="" />
-        <img class="amenities" src="./img/grocery.jpg" alt="" />
-        <img class="amenities" src="./img/grocery.jpg" alt="" />
-        <img class="amenities" src="./img/dentist.jpg" alt="" />
-      </div>
-      <div class="descrip">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat saepe
-        suscipit ex. Quam porro reprehenderit consequatur, odio nostrum
-        laudantium assumenda cupiditate, voluptatibus architecto, incidunt eum?
-        Doloribus laborum asperiores atque odio! Quae fuga, incidunt quaerat
-        quisquam facere labore, fugit tempore voluptatibus ducimus explicabo
-        natus, dolorem modi! Unde, omnis culpa! Id iusto mollitia delectus quos
-        consequatur distinctio quasi sunt illum facilis nisi.
-      </div>
-    </article>
+    <div id="projects"></div>
+    <section>
+      <h1 class="shiva">Shivanand Heights</h1>
+      <article>
+        <div class="descrip">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+          saepe suscipit ex. Quam porro reprehenderit consequatur, odio nostrum
+          laudantium assumenda cupiditate, voluptatibus architecto, incidunt
+          eum? Doloribus laborum asperiores atque odio! Quae fuga, incidunt
+          quaerat quisquam facere labore, fugit tempore voluptatibus ducimus
+          explicabo natus, dolorem modi! Unde, omnis culpa!
+        </div>
+        <div class="images">
+          <img
+            draggable="false"
+            (dragstart)="false;"
+            class="unselectable"
+            class="amenities"
+            src="./img/grocery.jpg"
+            alt=""
+          />
+          <img
+            draggable="false"
+            (dragstart)="false;"
+            class="unselectable"
+            class="amenities"
+            src="./img/grocery.jpg"
+            alt=""
+          />
+          <img
+            draggable="false"
+            (dragstart)="false;"
+            class="unselectable"
+            class="amenities"
+            src="./img/grocery.jpg"
+            alt=""
+          />
+          <img
+            draggable="false"
+            (dragstart)="false;"
+            class="unselectable"
+            class="amenities"
+            src="./img/dentist.jpg"
+            alt=""
+          />
+        </div>
+      </article>
+      <h1 class="shiva">Our Services</h1>
+      <article>
+        <div class="images">
+          <img
+            draggable="false"
+            (dragstart)="false;"
+            class="unselectable"
+            class="amenities"
+            src="./img/grocery.jpg"
+            alt=""
+          />
+          <img
+            draggable="false"
+            (dragstart)="false;"
+            class="unselectable"
+            class="amenities"
+            src="./img/grocery.jpg"
+            alt=""
+          />
+          <img
+            draggable="false"
+            (dragstart)="false;"
+            class="unselectable"
+            class="amenities"
+            src="./img/grocery.jpg"
+            alt=""
+          />
+          <img
+            draggable="false"
+            (dragstart)="false;"
+            class="unselectable"
+            class="amenities"
+            src="./img/dentist.jpg"
+            alt=""
+          />
+        </div>
+        <div class="descrip">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+          saepe suscipit ex. Quam porro reprehenderit consequatur, odio nostrum
+          laudantium assumenda cupiditate, voluptatibus architecto, incidunt
+          eum? Doloribus laborum asperiores atque odio! Quae fuga, incidunt
+          quaerat quisquam facere labore, fugit tempore voluptatibus ducimus
+          explicabo natus, dolorem modi! Unde, omnis culpa!
+        </div>
+      </article>
+    </section>
+    <section id="contact-us">
+      <form
+        action="https://formspree.io/f/mleqoqrv"
+        method="post"
+        id="contact-us"
+        class="contact-us"
+      >
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here"
+            required
+          ></textarea>
+        </div>
+        <button class="submit">Send Message</button>
+      </form>
+    </section>
+    <section id="about-us">
+      <footer>
+        <div class="about-text">Shivanand Infrastructure.</div>
+        <div class="address">
+          <p>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            Dastur nagar square, Amravati Old Bypass Rd, Maya Nagar, Chatrapati
+            Sahu Nagar, Amravati, Maharashtra 444606
+          </p>
+          <p>Email: kanishkvalecha09@gmail.com</p>
+          <p>
+            <a href="https://maps.app.goo.gl/he5H8132LPUkAkpM7"
+              >See on Map<i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </a>
+          </p>
+        </div>
+      </footer>
+    </section>
     <script>
       // Select all anchor tags within the .slide div
       const slideAnchors = document.querySelectorAll(".slide a");
@@ -106,6 +241,13 @@
           slider.scrollLeft = targetImage.offsetLeft;
         });
       });
+
+      // const forms = document.getElementById("contact-us");
+
+      // forms.addEventListener("submit", function (e) {
+      //   forms.reset();
+      //   alert("Your message has been sent!");
+      // });
     </script>
   </body>
 </html>
