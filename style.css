@@ -88,7 +88,7 @@ article {
   max-width: 25rem;
   text-align: center;
   padding: 5%;
-  font-size: min(3vw, 1rem);
+  font-size: min(4vw, 1rem);
 }
 
 .images {
@@ -247,7 +247,7 @@ nav {
 .contact-us {
   display: flex;
   flex-direction: column;
-  margin: 0 10%;
+  margin: 0 5%;
   align-items: center;
 }
 
@@ -267,7 +267,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: clamp(40vh, 60%, 38rem);
+  width: clamp(50vh, 60%, 38rem);
   padding: 5%;
 }
 
@@ -344,14 +344,14 @@ footer {
 }
 
 .about-text {
-  font-size: 5rem;
+  font-size: min(6vw, 5rem);
   color: rgb(217, 216, 216);
 }
 
 .address > p {
   width: 300px;
   color: #8d8c8c;
-  margin-left: 30%;
+  margin-left: 10%;
   padding-bottom: 2%;
 }
 
@@ -359,4 +359,39 @@ footer {
 .address p > a,
 a > i {
   color: #8d8c8c;
+}
+
+@media (max-width: 700px) {
+  .about-text {
+    display: none;
+  }
+
+  .address > p {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3%;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 700px) {
+  nav > ul {
+    display: none;
+  }
+
+  nav {
+    justify-content: center;
+    position: absolute;
+  }
 }

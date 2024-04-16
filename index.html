@@ -169,6 +169,7 @@
         method="post"
         id="contact-us"
         class="contact-us"
+        onsubmit="submitForm(event)"
       >
         <div class="form-group">
           <label for="name">Your Name:</label>
@@ -221,33 +222,26 @@
       </footer>
     </section>
     <script>
-      // Select all anchor tags within the .slide div
       const slideAnchors = document.querySelectorAll(".slide a");
-
-      // Add an event listener to each anchor
       slideAnchors.forEach((anchor) => {
         anchor.addEventListener("click", function (event) {
-          // Prevent the default anchor action
           event.preventDefault();
-
-          // Get the href attribute of the clicked anchor
           const targetId = this.getAttribute("href");
-
-          // Use the targetId to select the corresponding image
           const targetImage = document.querySelector(targetId);
-
-          // Scroll the .slider container to the target image
           const slider = document.querySelector(".slider");
           slider.scrollLeft = targetImage.offsetLeft;
         });
       });
 
-      // const forms = document.getElementById("contact-us");
-
-      // forms.addEventListener("submit", function (e) {
-      //   forms.reset();
-      //   alert("Your message has been sent!");
-      // });
+      const forms = document.querySelector("form");
+      function submitForm(event) {
+        event.preventDefault();
+        fetch(event.target.action, {
+          method: "POST",
+          body: new FormData(event.target),
+        });
+        forms.reset();
+      }
     </script>
   </body>
 </html>
